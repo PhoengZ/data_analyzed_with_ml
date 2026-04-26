@@ -51,26 +51,65 @@
 
 \subsection*{ข้อที่ 1}
 \textbf{โจทย์:} Dynamically-typed language หมายความว่าอะไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ประเภทของตัวแปรถูกตัดสินตอน Run-Time จึงไม่ต้องกำหนดประเภทของตัวแปรก่อนใช้งาน
+    \item ประเภทของตัวแปรถูกตัดสินตอน Run-Time จึงต้องกำหนดประเภทของตัวแปรก่อนใช้งานเสมอ
+    \item ประเภทของตัวแปรถูกตัดสินก่อน Run-Time จึงต้องกำหนดประเภทของตัวแปรก่อนใช้งานเสมอ
+    \item ประเภทของตัวแปรถูกตัดสินก่อน Run-Time จึงไม่ต้องกำหนดประเภทของตัวแปรก่อนใช้งาน
+\end{itemize}
+
 \textbf{คำตอบ:} ประเภทของตัวแปรถูกตัดสินตอน Run-Time จึงไม่ต้องกำหนดประเภทของตัวแปรก่อนใช้งาน\\
 \textbf{คำอธิบาย:} ภาษาโปรแกรมที่มีลักษณะเป็น Dynamically-typed คือภาษาที่ "ประเภทของข้อมูล" ของตัวแปรจะถูกผูกติดอยู่กับค่า (Value) ที่เก็บอยู่ในตัวแปรในขณะนั้น การตัดสินประเภทข้อมูลจะเกิดขึ้นในขณะที่โปรแกรมกำลังทำงาน (Run-time)
 
 \subsection*{ข้อที่ 2}
 \textbf{โจทย์:} อะไรเป็นหัวใจหลักที่ทำให้ Jupyter notebook เข้าใจภาษาโปรแกรมภาษาต่าง ๆ\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Kernel
+    \item Python
+    \item Ipython
+    \item ไฟล์ config
+\end{itemize}
+
 \textbf{คำตอบ:} Kernel\\
 \textbf{คำอธิบาย:} สถาปัตยกรรมของ Jupyter แยกส่วนแสดงผล (Notebook) ออกจากส่วนประมวลผล (Kernel) การรองรับหลายภาษาทำได้โดยการติดตั้ง Kernel เฉพาะของภาษานั้นๆ
 
 \subsection*{ข้อที่ 3}
 \textbf{โจทย์:} ถ้าสมุดโน้ต ณ ตอนนี้มี 5 cell และ cell ปัจจุบันอยู่ที่ cell รองสุดท้าย หลังจากที่รัน cell ปัจจุบันด้วยการกดปุ่ม Shift+Enter สมุดโน้ตจะมีกี่ cell\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item 4
+    \item 5
+    \item 6
+    \item 7
+\end{itemize}
+
 \textbf{คำตอบ:} 5 cell\\
 \textbf{คำอธิบาย:} เมื่อรัน Cell รองสุดท้าย (ลำดับที่ 4 จาก 5) ด้วย Shift+Enter ระบบจะเลื่อน Focus ไปยัง Cell ถัดไป (ลำดับที่ 5) โดยไม่มีการสร้าง Cell ใหม่ จำนวน Cell รวมจึงยังคงเป็น 5
 
 \subsection*{ข้อที่ 4}
 \textbf{โจทย์:} หากต้องการแสดง block ของโค้ดใน Markdown cell เราสามารถทำได้อย่างไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ใส่ space จำนวนเท่ากันแต่ต้องอย่างน้อย 4 ตัวในส่วนต้นของบรรทัดของโค้ดที่อยู่ใน Block เดียวกัน
+    \item ใส่เครื่องหมาย - และตามด้วยเว้นวรรคในส่วนต้นของบรรทัดของโค้ดที่อยู่ใน Block เดียวกัน
+    \item ใส่เครื่องหมาย * จำนวนเท่ากันในส่วนต้นของบรรทัดของโค้ดที่อยู่ใน Block เดียวกัน
+    \item เราไม่สามารถแสดงโค้ดใน Markdown cell ได้
+\end{itemize}
+
 \textbf{คำตอบ:} ใส่ space จำนวนเท่ากันแต่ต้องอย่างน้อย 4 ตัวในส่วนต้นของบรรทัดของโค้ดที่อยู่ใน Block เดียวกัน\\
 \textbf{คำอธิบาย:} การเว้นวรรค 4 ช่องหรือ 1 Tab เป็นมาตรฐานดั้งเดิม (Indented Code Block) ของ Markdown ในการสร้างส่วนแสดงผลโค้ด
 
 \subsection*{ข้อที่ 5}
 \textbf{โจทย์:} ข้อใดเป็นผลลัพธ์ของโปรแกรมต่อไปนี้
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item 2
+    \item 2.0
+    \item 4
+    \item 4.0
+\end{itemize}
 \begin{lstlisting}[language=Python]
 x = 2
 y = 4
@@ -82,26 +121,65 @@ print(y)
 
 \subsection*{ข้อที่ 6}
 \textbf{โจทย์:} expression 4 + - 1 * 4 / 2 ** 2 มีค่าเท่ากับเท่าใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item 0.0
+    \item 3.0
+    \item 36.0
+    \item ไม่มีข้อถูก
+\end{itemize}
+
 \textbf{คำตอบ:} 3.0\\
 \textbf{คำอธิบาย:} ลำดับความสำคัญเริ่มจากเลขยกกำลัง (\texttt{2**2=4}) -> คูณ/หาร (\texttt{-1*4/4 = -1.0}) -> บวก (\texttt{4 + (-1.0) = 3.0})
 
 \subsection*{ข้อที่ 7}
 \textbf{โจทย์:} ให้ function funcA() มี definition ส่วนหัวเป็น funcA( *arg1 , arg2 = True ) ในการเรียกใช้ funcA() จะต้องมีการใส่ argument จำนวนกี่ค่า\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item 1 ค่า
+    \item 2 ค่า
+    \item อย่างน้อย 1 ค่า
+    \item กี่ค่าก็ได้
+\end{itemize}
+
 \textbf{คำตอบ:} 0 ค่า\\
 \textbf{คำอธิบาย:} เนื่องจาก \texttt{*arg1} เป็นการรับ Argument แบบไม่จำกัดจำนวน (รวมถึง 0 ค่า) และ \texttt{arg2} มีค่าเริ่มต้น (Default value) จึงสามารถเรียกใช้ฟังก์ชันโดยไม่ส่ง Argument ใดๆ ได้เลย
 
 \subsection*{ข้อที่ 8}
 \textbf{โจทย์:} ข้อใดเกิด implicit data type conversion และผลลัพธ์มี data type ใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item 4.0 + 4.0 ผลลัพธ์เป็น int
+    \item 4.0 + 4.5 ผลลัพธ์เป็น float
+    \item 3 + 4.0 ผลลัพธ์เป็น float
+    \item 3 + 4.0 ผลลัพธ์เป็น int
+\end{itemize}
+
 \textbf{คำตอบ:} 3 + 4.0 ผลลัพธ์เป็น float\\
 \textbf{คำอธิบาย:} เมื่อมีการดำเนินการระหว่าง Integer และ Float ระบบจะแปลง Integer เป็น Float โดยอัตโนมัติ (Type Promotion) เพื่อความแม่นยำ
 
 \subsection*{ข้อที่ 9}
 \textbf{โจทย์:} ผลลัพธ์เมื่อรัน print(type("34" + 3)) คือข้อใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item 343
+    \item <class 'int'>
+    \item <class 'str'>
+    \item เกิด error
+\end{itemize}
+
 \textbf{คำตอบ:} เกิด error\\
 \textbf{คำอธิบาย:} Python เป็น Strong Typing ไม่ยอมให้เชื่อม (Concatenate) String เข้ากับ Integer โดยตรง จะเกิด \texttt{TypeError}
 
 \subsection*{ข้อที่ 10}
 \textbf{โจทย์:} หลังจากรันโปรแกรมต่อไปนี้ ค่า x จะมีค่าเท่ากับปริมาณใด
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ค่า x ในบรรทัดแรกของโปรแกรม
+    \item ผลรวมของจำนวนเต็มบวกทั้งหมดที่ไม่เกิน 1,000
+    \item ผลรวมของจำนวนเต็มบวกเลขคู่ที่ไม่เกิน 1,000
+    \item ผลรวมของจำนวนเต็มบวกเลขคี่ที่ไม่เกิน 1,000
+\end{itemize}
 \begin{lstlisting}[language=Python]
 x = 0
 for i in range(1,1000,2):
@@ -113,6 +191,13 @@ for i in range(1,1000,2):
 
 \subsection*{ข้อที่ 11}
 \textbf{โจทย์:} โปรแกรมต่อไปนี้ให้ผลลัพธ์อะไร
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item 3
+    \item 4
+    \item 250
+    \item 500
+\end{itemize}
 \begin{lstlisting}[language=Python]
 x = 1
 y = 1000
@@ -133,42 +218,105 @@ print(x)
 
 \subsection*{ข้อที่ 12}
 \textbf{โจทย์:} ข้อใดถูกต้อง\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Python list เป็น immutable
+    \item Python list มี items ที่เป็นข้อมูลประเภท list ปนกับข้อมูลประเภทอื่นได้
+    \item ลำดับของ items ใน list ไม่สำคัญ
+    \item Python list ไม่รองรับการทำ iteration
+\end{itemize}
+
 \textbf{คำตอบ:} Python list มี items ที่เป็นข้อมูลประเภท list ปนกับข้อมูลประเภทอื่นได้\\
 \textbf{คำอธิบาย:} Python list เป็น Heterogeneous collection ที่สามารถเก็บข้อมูลต่างชนิดกันรวมถึง List ซ้อนกันได้
 
 \subsection*{ข้อที่ 13}
 \textbf{โจทย์:} ข้อใดถูกสำหรับ Python Set\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เป็น unordered data collection
+    \item มี items ที่มีค่าซ้ำกันได้
+    \item เป็น immutable data collection
+    \item ถูกทุกข้อ
+\end{itemize}
+
 \textbf{คำตอบ:} เป็น unordered data collection\\
 \textbf{คำอธิบาย:} Set ใน Python ไม่มีลำดับ (Unordered) และไม่สามารถเข้าถึงผ่าน Index ได้ รวมถึงเก็บค่าที่ไม่ซ้ำกันเท่านั้น
 
 \subsection*{ข้อที่ 14}
 \textbf{โจทย์:} ข้อใดถูกต้อง ถ้ารันคำสั่ง t1 = tuple('1234')\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item t1 จะมี item เดียว
+    \item t1 จะมี length เท่ากับ 4 เนื่องจาก 'text' มีความยาว 4
+    \item t1 จะมี 4 items ที่มีค่า 1, 2, 3 และ 4
+    \item t1 จะมี 4 items ที่มีค่า '1', '2', '3' และ '4'
+\end{itemize}
+
 \textbf{คำตอบ:} t1 จะมี 4 items ที่มีค่า '1', '2', '3' และ '4'\\
 \textbf{คำอธิบาย:} ฟังก์ชัน \texttt{tuple()} จะแตกสมาชิกจาก Iterable (ในที่นี้คือ String) ออกมาทีละตัวละครสร้างเป็น Tuple
 
 \subsection*{ข้อที่ 15}
 \textbf{โจทย์:} ให้ product เป็น dictionary ที่มีค่า {'id': 'P123', 'name': 'watch', 'price': 5000} ถ้าต้องการเพิ่ม 'color' เป็นอีก key หนึ่ง ที่มีค่า 'silver' ต้องเขียน code อย่างไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item product.add('color', 'silver')
+    \item product.update('color', 'silver')
+    \item product['color'] = 'silver'
+    \item ถูกทุกข้อ
+\end{itemize}
+
 \textbf{คำตอบ:} product['color'] = 'silver'\\
 \textbf{คำอธิบาย:} การเพิ่มหรืออัปเดต Key ใน Dictionary ทำได้โดยการกำหนดค่าผ่านวงเล็บก้ามปูโดยตรง
 
 \subsection*{ข้อที่ 16}
 \textbf{โจทย์:} ข้อใดไม่ใช่ประโยชน์ของ Functions\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Reuseability
+    \item Modularity
+    \item Availability
+    \item Maintainability
+\end{itemize}
+
 \textbf{คำตอบ:} Availability\\
 \textbf{คำอธิบาย:} Availability (ความพร้อมใช้งาน) เป็นคุณสมบัติของระบบงานในระดับโครงสร้างพื้นฐาน ไม่ใช่ประโยชน์โดยตรงจากการจัดโครงสร้างโค้ดด้วยฟังก์ชัน
 
 \subsection*{ข้อที่ 17}
 \textbf{โจทย์:} จากฟังก์ชั่น signature: \texttt{def create\_customer(first\_name, last\_name, age, is\_new\_customer=True, **kwargs):}\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item create\_customer('David', last\_name='Berry', age=25, title='Mr.')
+    \item create\_customer('David', last\_name='Berry', title='Mr.', occupation='programmer')
+    \item create\_customer('David', last\_name='Berry', age=30, is\_new\_customer=False)
+    \item create\_customer('David', 'Berry', 30, False)
+\end{itemize}
+
 ข้อใดทำให้เกิด error จากการเรียกใช้\\
 \textbf{คำตอบ:} create\_customer('David', last\_name='Berry', title='Mr.', occupation='programmer')\\
 \textbf{คำอธิบาย:} ขาด Argument ที่จำเป็น (Required Positional Argument) คือ \texttt{age}
 
 \subsection*{ข้อที่ 18}
 \textbf{โจทย์:} ข้อใดคือประโยชน์ของการเปิดไฟล์ด้วย keyword with\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item a. ไม่ต้องเรียกฟังก์ชั่น file close() เพื่อปิดไฟล์ที่เปิดไว้ หลังจากออกจาก block ของ with แล้ว
+    \item b. ใน block ของ with ฟังก์ชั่น readline() จะวน loop อ่านทีละบรรทัดในไฟล์ ให้โดยอัตโนมัติ และเมื่ออ่านจนสุดไฟล์แล้ว ก็จะทำการออกจาด block ของ with โดยอัตโนมัติ
+    \item ถูกทั้งข้อ a. และ b.
+    \item ผิดทั้งข้อ a. และ b.
+\end{itemize}
+
 \textbf{คำตอบ:} ไม่ต้องเรียกฟังก์ชั่น file close() เพื่อปิดไฟล์ที่เปิดไว้ หลังจากออกจาก block ของ with แล้ว\\
 \textbf{คำอธิบาย:} \texttt{with} ทำหน้าที่เป็น Context Manager ที่จะเรียกใช้เมธอดปิดไฟล์ให้อัตโนมัติเมื่อออกจากบล็อก
 
 \subsection*{ข้อที่ 19}
 \textbf{โจทย์:} โปรแกรมต่อไปนี้ให้ผลลัพธ์อะไร
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item False
+    \item {(1,2,3,4)}
+    \item {(1,2,3,4,6,9)}
+    \item {[True, True, True, False]}
+\end{itemize}
 \begin{lstlisting}[language=Python]
 coor = [(1,2),(2,4),(3,6),(4,9)]
 print(list(map(lambda i: i[1]==2*i[0] ,coor)))
@@ -178,6 +326,14 @@ print(list(map(lambda i: i[1]==2*i[0] ,coor)))
 
 \subsection*{ข้อที่ 20}
 \textbf{โจทย์:} ข้อใดคือลำดับขั้น scope ของ modules ใน Python จากใหญ่ไปเล็กที่ถูกต้อง\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Class -> Function -> Package
+    \item Package -> Python File -> Function
+    \item Package -> Class/Function -> Python File
+    \item Function -> Class -> Variable
+\end{itemize}
+
 \textbf{คำตอบ:} Package -> Python File -> Function\\
 \textbf{คำอธิบาย:} Package บรรจุหลายไฟล์ (Modules), ไฟล์บรรจุคลาสและฟังก์ชันตามลำดับโครงสร้าง
 
@@ -186,77 +342,197 @@ print(list(map(lambda i: i[1]==2*i[0] ,coor)))
 
 \subsection*{ข้อที่ 1}
 \textbf{โจทย์:} ตัวเลือกใดแสดงแนวคิดของการทำงานโดยคอมพิวเตอร์เชิงไฟฟ้า\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item หลักการเปิด/ปิดสวิตช์ แทนค่า 0 หรือ 1 ในเลขฐานสอง
+    \item หลักการทดเลขในระบบฐานสอง
+    \item หลักการเหนี่ยวนำของแม่เหล็กไฟฟ้า
+    \item หลักการต้านทานกระแสของโหลดตัวต้านทาน
+\end{itemize}
+
 \textbf{คำตอบ:} หลักการเปิด/ปิดสวิตช์ แทนค่า 0 หรือ 1 ในเลขฐานสอง\\
 \textbf{คำอธิบาย:} ทรานซิสเตอร์ทำหน้าที่เป็นสวิตช์ที่มีสถานะ เปิด (1) และ ปิด (0) ซึ่งเป็นพื้นฐานของระบบดิจิทัล
 
 \subsection*{ข้อที่ 2}
 \textbf{โจทย์:} ทรานซิสเตอร์ถูกใช้อย่างไรในระบบคอมพิวเตอร์\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ใช้แทนสวิตช์เชิงไฟฟ้า
+    \item ใช้แทนสวิตช์เชิงกล
+    \item ใช้แทนตัวต้านทานกระแส
+    \item ใช้แทนตัวนำไฟฟ้าให้กระแสไหล
+\end{itemize}
+
 \textbf{คำตอบ:} ใช้แทนสวิตช์เชิงไฟฟ้า\\
 \textbf{คำอธิบาย:} ทรานซิสเตอร์ทำหน้าที่ควบคุมการไหลของกระแสไฟฟ้าเพื่อแทนค่าทางตรรกศาสตร์ (Boolean Logic)
 
 \subsection*{ข้อที่ 3}
 \textbf{โจทย์:} กำหนดข้อมูลเลขฐานสอง ขนาด 8 หลักเป็น 10010000 ข้อใดถูกต้อง\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item หากกำหนดให้บิตแรกสุดท้ายซ้ายเป็นเครื่องหมาย โดย 1 แทนค่าลบ และ 0 แทนค่าบวก เลขนี้จำเป็นจำนวนลบ
+    \item หากไม่มีการเก็บเครื่องหมาย เลขนี้จะแทนค่า 144 ในฐานสิบ
+    \item เลข 8 หลักสามารถแทนค่าได้ทั้งหมด 256 รูปแบบ ซึ่งจะเป็นจำนวนบวกทั้งหมด หรือมีทั้งบวกและลบก็ได้
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกตัวเลือก\\
 \textbf{คำอธิบาย:} (1) บิตซ้ายสุดเป็น 1 คือค่าลบ (2) ไม่คิดเครื่องหมายได้ 144 (3) 8 บิตแทนได้ 256 รูปแบบ
 
 \subsection*{ข้อที่ 4}
 \textbf{โจทย์:} หากกำหนด A = 0 และ B = 1 ตัวเลือกใดเป็นผลลัพธ์ของวงจรต่อไปนี้\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item 0
+    \item 1
+    \item 0 หรือ 1 ก็ได้
+    \item 2
+\end{itemize}
+
 \textbf{ลักษณะรูปภาพ:} ภาพแสดงวงจรลอจิกเกตที่ประกอบด้วย AND gate และ NOT gate ต่อร่วมกัน โดยรับอินพุต A และ B ผ่านเกตต่างๆ จนถึงเอาต์พุตสุดท้าย\\
 \textbf{คำตอบ:} 1\\
 \textbf{คำอธิบาย:} จากการไล่ลอจิก: NOT(A AND A) = 1, NOT(B AND B) = 0, (1 AND 0) = 0, และ NOT ตัวสุดท้ายกลับค่า 0 เป็น 1
 
 \subsection*{ข้อที่ 5}
 \textbf{โจทย์:} หากกำหนด A = 0100 และ B = 0010 ตัวเลือกใดเป็นผลลัพธ์ของ A AND B\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item 0000
+    \item 0110
+    \item 1000
+    \item 1001
+\end{itemize}
+
 \textbf{คำตอบ:} 0000\\
 \textbf{คำอธิบาย:} การทำ Bitwise AND ทีละตำแหน่ง: (0\&0), (1\&0), (0\&1), (0\&0) ผลรวมเป็น 0000
 
 \subsection*{ข้อที่ 6}
 \textbf{โจทย์:} จากตัวเลือกต่อไปนี้ หน่วยความจำแบบใดทำงานได้เร็วที่สุด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item HDD
+    \item ROM
+    \item RAM
+    \item CPU
+\end{itemize}
+
 \textbf{คำตอบ:} CPU (Register)\\
 \textbf{คำอธิบาย:} Register อยู่ภายใน CPU โดยตรง มีความเร็วสูงสุดเนื่องจากไม่มีความหน่วงจากการรับส่งผ่านบัสภายนอก
 
 \subsection*{ข้อที่ 7}
 \textbf{โจทย์:} ตัวเลือกใดเป็นส่วนคำนวณของคอมพิวเตอร์\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item HDD
+    \item SSD
+    \item RAM
+    \item CPU
+\end{itemize}
+
 \textbf{คำตอบ:} CPU\\
 \textbf{คำอธิบาย:} CPU (Central Processing Unit) มีหน่วย ALU ที่ทำหน้าที่คำนวณทางคณิตศาสตร์และตรรกศาสตร์
 
 \subsection*{ข้อที่ 8}
 \textbf{โจทย์:} การทำงานร่วมกันของอุปกรณ์ฮาร์ดแวร์ต่างๆ เกิดขึ้นได้อย่างไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item โปรแกรมคอมพิวเตอร์มีหน้าที่ควบคุมและประสานงานการทำงานส่วนต่างๆ
+    \item หน่วยประมวลผลกลางรับคำสั่งและประมวลผลเป็นสัญญาณควบคุมการทำงานส่วนต่างๆ
+    \item ระบบปฏิบัติการดำเนินการควบคุมและประสานงานการทำงานส่วนต่างๆ
+    \item ผู้ควบคุมระบบคอมพิวเตอร์ดำเนินการควบคุมการทำงานของฮาร์ดแวร์ส่วนต่างๆ
+\end{itemize}
+
 \textbf{คำตอบ:} ระบบปฏิบัติการดำเนินการควบคุมและประสานงานการทำงานส่วนต่างๆ\\
 \textbf{คำอธิบาย:} OS ทำหน้าที่เป็นตัวกลางบริหารจัดการทรัพยากร (CPU, RAM, Storage) ให้ทำงานสอดประสานกัน
 
 \subsection*{ข้อที่ 9}
 \textbf{โจทย์:} ภาษาแอสเซมบลีคืออะไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ภาษาโปรแกรมซึ่งเทียบเท่ากับภาษาเครื่อง แต่เขียนให้อยู่ในรูปแบบที่อ่านได้ง่ายขึ้น
+    \item ภาษาโปรแกรมระดับสูง มีโครงสร้างรองรับการทำงานที่หลากหลาย
+    \item ภาษาโปรแกรมกลางที่สามารถทำงานได้กับคอมพิวเตอร์หลายชนิด
+    \item ภาษาที่ใช้ในการกำหนดรูปแบบการทำงานร่วมกันของอุปกรณ์ในระบบคอมพิวเตอร์
+\end{itemize}
+
 \textbf{คำตอบ:} ภาษาโปรแกรมซึ่งเทียบเท่ากับภาษาเครื่อง แต่เขียนให้อยู่ในรูปแบบที่อ่านได้ง่ายขึ้น\\
 \textbf{คำอธิบาย:} เป็นภาษาระดับต่ำที่ใช้ตัวอักษรย่อ (Mnemonics) แทนรหัสเลขฐานสองของภาษาเครื่อง
 
 \subsection*{ข้อที่ 10}
 \textbf{โจทย์:} การมี core หรือแกนประมวลผล มากขึ้น มีประโยชน์อย่างไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item สามารถประมวลผลหลายๆ งานพร้อมกันโดยกระจายไปทำงานตามแกนต่างๆ กันได้
+    \item สามารถแบ่งงานเป็นส่วนย่อยๆ ไปทำงานตามแกนต่างๆ ทำให้งานโดยรวมเสร็จเร็วขึ้น
+    \item สามารถแบ่งให้ผู้ใช้หลายๆ คนเข้ามาใช้งานพร้อมกันได้ โดยแบ่งแกนประมวลผลกันไปใช้
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกตัวเลือก\\
 \textbf{คำอธิบาย:} ช่วยในการทำ Multitasking, ขนานการประมวลผล (Parallelism) และรองรับผู้ใช้ได้มากขึ้น
 
 \subsection*{ข้อที่ 11}
 \textbf{โจทย์:} ตัวเลือกใดเป็นหน้าที่ของระบบปฏิบัติการ\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item จัดสรรทรัพยากรในระบบคอมพิวเตอร์ให้ซอฟต์แวร์ต่างๆ
+    \item ควบคุมสิทธิการใช้งานของผู้ใช้ในการเข้าถึงทรัพยากรต่างๆ
+    \item ติดต่อกับข่ายงานคอมพิวเตอร์
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกตัวเลือก\\
 \textbf{คำอธิบาย:} ครอบคลุมการจัดสรรทรัพยากร, การควบคุมสิทธิการใช้งาน และการจัดการระบบเครือข่าย
 
 \subsection*{ข้อที่ 12}
 \textbf{โจทย์:} เหตุใดไฟล์ภาพ JPG จากมือถือจึงเปิดบนคอมพิวเตอร์ได้แม้สถาปัตยกรรมต่างกัน\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เพราะใช้โปรแกรมเดียวกันในการอ่านไฟล์
+    \item เพราะโปรแกรมอ่านไฟล์สามารถทำงานได้ในทุกระบบปฏิบัติการ
+    \item เพราะโปรแกรมอ่านไฟล์เข้าใจข้อตกลงการแทนข้อมูลของไฟล์
+    \item เพราะโปรแกรมอ่านไฟล์ทำงานได้ในทุกสถาปัตยกรรม
+\end{itemize}
+
 \textbf{คำตอบ:} เพราะโปรแกรมอ่านไฟล์เข้าใจข้อตกลงการแทนข้อมูลของไฟล์\\
 \textbf{คำอธิบาย:} เกิดจากมาตรฐานรูปแบบไฟล์ (File Format Standards) ที่เป็นข้อตกลงร่วมกันในการเก็บข้อมูล
 
 \subsection*{ข้อที่ 13}
 \textbf{โจทย์:} ตัวเลือกใดถูกต้องเกี่ยวกับการเก็บข้อมูลภาพ\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item การเก็บข้อมูลสีของภาพสีเป็นการเก็บข้อมูลองค์ประกอบของสีที่ทำให้เกิดสีนั้นๆ ขึ้น
+    \item การเก็บข้อมูลภาพทำได้โดยแบ่งภาพเป็นจุดเล็กๆ และเก็บสีของแต่ละจุดนั้น
+    \item การเก็บข้อความภาพสามารถทำได้โดยเก็บข้อมูลสมการที่ใช้ในการวาดเส้นให้เกิดภาพนั้น
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกตัวเลือก\\
 \textbf{คำอธิบาย:} ครอบคลุมทั้งการเก็บองค์ประกอบสี (RGB), การแบ่งเป็นจุด (Bitmap/Pixel) และการใช้สมการ (Vector)
 
 \subsection*{ข้อที่ 14}
 \textbf{โจทย์:} หากข้อมูลทุกรูปแบบเก็บเป็นเลขฐานสอง ข้อใดถูกต้อง\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เราสามารถเปิดไฟล์ข้อความ โดยมองเป็นรูปภาพแบบ แต่น่าจะเป็นรูปที่ดูไม่รู้เรื่อง
+    \item เราสามารถมองไฟล์รูปภาพเป็นชุดของตัวเลข สามารถนำมาบวกลบได้
+    \item เราสามารถมองไฟล์วิดีโอเป็นไฟล์ข้อความขนาดใหญ่ได้ แต่น่าจะอ่านไม่ออก
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกตัวเลือก\\
 \textbf{คำอธิบาย:} ข้อมูลดิจิทัลคือชุดตัวเลข ความหมายขึ้นอยู่กับการตีความของโปรแกรมที่นำไปเปิด
 
 \subsection*{ข้อที่ 15}
 \textbf{โจทย์:} หากกำหนด A = 0 และ B = 1 ตัวเลือกใดเป็นผลลัพธ์ของวงจรต่อไปนี้\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item 0
+    \item 1
+    \item 0 หรือ 1 ก็ได้
+    \item 2
+\end{itemize}
+
 \textbf{ลักษณะรูปภาพ:} ภาพแสดงสัญลักษณ์ของ XOR Gate (Exclusive OR Gate) ที่รับอินพุต A และ B\\
 \textbf{คำตอบ:} 1\\
 \textbf{คำอธิบาย:} XOR Gate จะให้ผลลัพธ์เป็น 1 เมื่ออินพุตต่างกัน (0 และ 1)
@@ -266,51 +542,131 @@ print(list(map(lambda i: i[1]==2*i[0] ,coor)))
 
 \subsection*{ข้อที่ 1}
 \textbf{โจทย์:} ข้อใดเป็นคำที่ตีความได้แตกต่างกันมากที่สุดในคำนิยามของปัญญาประดิษฐ์\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เวลา
+    \item มนุษย์
+    \item ความฉลาด
+    \item เครื่องคอมพิวเตอร์
+\end{itemize}
+
 \textbf{คำตอบ:} ความฉลาด\\
 \textbf{คำอธิบาย:} "ความฉลาด" เป็นนามธรรมที่ไม่มีนิยามสากลและมีการตีความหลากหลายในเชิงจิตวิทยาและวิทยาการคอมพิวเตอร์
 
 \subsection*{ข้อที่ 2}
 \textbf{โจทย์:} การทดสอบทัวริง (Turing Test) เกี่ยวข้องกับข้อใดมากที่สุด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ภาษาจีน
+    \item การเรียนรู้แบบเสริมแรง
+    \item การรู้จำรูปภาพตัวอักษร
+    \item การเลียนแบบมนุษย์ด้านการสื่อสาร
+\end{itemize}
+
 \textbf{คำตอบ:} การเลียนแบบมนุษย์ด้านการสื่อสาร\\
 \textbf{คำอธิบาย:} เป็นการทดสอบความสามารถของเครื่องจักรในการสื่อสารผ่านตัวอักษรให้แนบเนียนจนมนุษย์แยกไม่ออก
 
 \subsection*{ข้อที่ 3}
 \textbf{โจทย์:} ข้อได้เปรียบของระบบปัญญาประดิษฐ์ที่มีมากกว่ามนุษย์คือข้อใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เข้าใจมนุษย์ได้มากกว่ามนุษย์ด้วยกัน
+    \item คำนวณทางคณิตศาสตร์ได้ดีกว่ามนุษย์
+    \item ค้นหาคำตอบได้หลากหลายรูปแบบมากกว่ามนุษย์
+    \item เข้าใจภาพและเสียงด้วยรายละเอียดที่มากกว่ามนุษย์
+\end{itemize}
+
 \textbf{คำตอบ:} คำนวณทางคณิตศาสตร์ได้ดีกว่ามนุษย์\\
 \textbf{คำอธิบาย:} คอมพิวเตอร์ประมวลผลตัวเลขมหาศาลได้แม่นยำและรวดเร็วกว่ามนุษย์ที่จำกัดด้วยความเหนื่อยล้า
 
 \subsection*{ข้อที่ 4}
 \textbf{โจทย์:} ข้อใดไม่ใช่ตัวอย่างของการประยุกต์ใช้งานทางปัญญาประดิษฐ์\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item การตอบโต้ผ่านแชตบอต
+    \item การค้นหารูปภาพด้วยการใช้รูปภาพ
+    \item การค้นหาประวัติค้นไข้จากรหัสแท่ง
+    \item การค้นหาเส้นทางที่เร็วที่สุดในการเดินทางด้วยรถยนต์
+\end{itemize}
+
 \textbf{คำตอบ:} การค้นหาประวัติคนไข้จากรหัสแท่ง (Barcode)\\
 \textbf{คำอธิบาย:} การสแกนบาร์โค้ดเป็นการเข้าถึงข้อมูลจากฐานข้อมูลโดยตรง ไม่มีการเรียนรู้หรือการตัดสินใจที่ซับซ้อนแบบ AI
 
 \subsection*{ข้อที่ 5}
 \textbf{โจทย์:} การหาวิธีการเลื่อนแผ่นในเกม 8-Puzzle ไม่เกี่ยวข้องกับข้อใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item การเข้าใจภาษาธรรมชาติ
+    \item การกำหนดสถานะของปัญหา
+    \item การใช้เหตุผลด้วยวิธีการตรรกศาสตร์
+    \item การค้นหาในปริภูมิของปัญหา (State Space)
+\end{itemize}
+
 \textbf{คำตอบ:} การเข้าใจภาษาธรรมชาติ\\
 \textbf{คำอธิบาย:} เกม 8-Puzzle แก้ไขด้วยตรรกศาสตร์และการค้นหาในพื้นที่สถานะ (State Space) ไม่เกี่ยวกับการประมวลผลภาษา
 
 \subsection*{ข้อที่ 6}
 \textbf{โจทย์:} ข้อใดคือปัญหาของการใช้การค้นหาแบบ Depth First Search (DFS)\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เวลาที่ใช้ค้นหา
+    \item หน่วยความจำที่ต้องใช้
+    \item สถานะของคำตอบที่ใกล้เคียงกันกับสถานะเดิมมากเกินไป
+    \item วิธีการยุ่งยากที่ใช้ประเมินความดีของคำตอบในขณะค้นหา
+\end{itemize}
+
 \textbf{คำตอบ:} หน่วยความจำที่ต้องใช้\\
 \textbf{คำอธิบาย:} DFS ต้องเก็บเส้นทางใน Stack หากกราฟลึกมากอาจเกิดปัญหาหน่วยความจำเต็มหรือ Stack Overflow
 
 \subsection*{ข้อที่ 7}
 \textbf{โจทย์:} ข้อใดเป็นข้อดีของการใช้ต้นไม้ตัดสินใจ (Decision Tree)\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ทำงานกับข้อมูลที่เป็นตัวเลขได้ดี
+    \item มนูษย์สามารถเข้าใจผลลัพธ์จากโมเดลได้ง่ายกว่าการเรียนรู้ในแบบอื่น ๆ
+    \item ทนต่อข้อมูลที่มีสัญญาณรบกวนเนื่องจากใช้ข้อมูลปริมาณมากและวิธีการทางสถิติ
+    \item ทำงานใกล้เคียงกับมนุษย์ เนื่องจากเป็นการจำลองเซลล์ประสาทของมนุษย์
+\end{itemize}
+
 \textbf{คำตอบ:} มนุษย์สามารถเข้าใจผลลัพธ์จากโมเดลได้ง่ายกว่าการเรียนรู้ในแบบอื่น ๆ\\
 \textbf{คำอธิบาย:} เป็นโมเดลแบบกล่องขาว (White-box) ที่แสดงขั้นตอนการตัดสินใจในรูปแบบ Flowchart ที่มนุษย์อ่านได้
 
 \subsection*{ข้อที่ 8}
 \textbf{โจทย์:} ในการจำแนกรูปภาพ นิยมใช้การเรียนรู้แบบใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ทฤษฎีของเบย์ (Bayes’ Theorem)
+    \item นิวรอลเน็ตเวิร์กแบบคอนโวลูชัน (Convolution Neural Network)
+    \item ต้นไม้ตัดสินใจ (Decision Tree)
+    \item การวิเคราะห์การถดถอยเชิงเส้น (Linear Regression)
+\end{itemize}
+
 \textbf{คำตอบ:} นิวรอลเน็ตเวิร์กแบบคอนโวลูชัน (Convolutional Neural Network - CNN)\\
 \textbf{คำอธิบาย:} CNN ถูกออกแบบมาเพื่อตรวจจับคุณลักษณะเชิงพื้นที่ (Spatial Features) ในรูปภาพได้โดยอัตโนมัติ
 
 \subsection*{ข้อที่ 9}
 \textbf{โจทย์:} ข้อใดคือหัวใจสำคัญของกระบวนการการเรียนรู้ของเครื่อง\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ลดข้อผิดพลาด (Error) บนตัวอย่างที่ใช้เรียนรู้
+    \item สร้างตัวอย่างใหม่ เพื่อให้ครอบคลุมตัวอย่างใหม่ในทุก ๆ กรณี
+    \item ใช้ตัวอย่างทดสอบ (Test data) เพื่อทำให้ความถูกต้องของโมเดลสูงที่สุด
+    \item ต้องมีระบบที่แก้ไขข้อผิดพลาดหลังจากได้ผลลัพธ์จากโมเดลแล้วในทุก ๆ ครั้ง
+\end{itemize}
+
 \textbf{คำตอบ:} ลดข้อผิดพลาด (Error) บนตัวอย่างที่ใช้เรียนรู้\\
 \textbf{คำอธิบาย:} การเรียนรู้คือการปรับพารามิเตอร์เพื่อทำให้ความแตกต่างระหว่างค่าทำนายและค่าจริง (Loss/Error) ต่ำที่สุด
 
 \subsection*{ข้อที่ 10}
 \textbf{โจทย์:} อัลกอริทึมใดเหมาะกับการพยากรณ์แนวโน้มค่าต่อเนื่อง เช่น ราคาหุ้น\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ต้นไม้ตัดสินใจ
+    \item ทฤษฎีของเบยส์
+    \item การวิเคราะห์การถดถอยเชิงเส้น
+    \item นิวรอลเน็ตเวิร์กแบบคอนโวลูชัน
+\end{itemize}
+
 \textbf{คำตอบ:} การวิเคราะห์การถดถอยเชิงเส้น (Linear Regression)\\
 \textbf{คำอธิบาย:} Regression ออกแบบมาเพื่อทำนายค่าตัวเลขต่อเนื่องและระบุทิศทางความสัมพันธ์ของข้อมูล
 
@@ -319,96 +675,247 @@ print(list(map(lambda i: i[1]==2*i[0] ,coor)))
 
 \subsection*{ข้อที่ 1}
 \textbf{โจทย์:} ข้อใดกล่าวผิดเกี่ยวกับ Loss function\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Mean squared error เป็น Loss function ประเภทหนึ่งที่ใช้ใน regression
+    \item เป็น Function ที่วัดค่าความแตกต่างของสิ่งที่โมเดลทำนายกับค่าจริง
+    \item ค่า Loss เยอะๆ ยิ่งดี
+    \item เป็น Function ที่ Learning algorithm ใช้สำหรับ Minimise
+\end{itemize}
+
 \textbf{คำตอบ:} ค่า Loss เยอะๆ ยิ่งดี\\
 \textbf{คำอธิบาย:} Loss Function วัดความผิดพลาด เป้าหมายคือการทำให้ค่านี้เหลือน้อยที่สุดเพื่อให้โมเดลแม่นยำที่สุด
 
 \subsection*{ข้อที่ 2}
 \textbf{โจทย์:} ข้อใดกล่าวผิดเกี่ยวกับ Hyper-parameters\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เป็นค่าที่มีการเปลี่ยนแปลงด้วย Learning algorithm
+    \item เป็นค่าที่ถูกกำหนดก่อนการเทรนโมเดล
+    \item เป็นค่าที่ควบคุมการหาค่า Model parameters ให้ตรงกับความต้องการ
+    \item สามารถหาค่าที่เหมาะสมได้จากการวัดประสิทธิภาพของโมเดลในระหว่างการทำ cross-validation
+\end{itemize}
+
 \textbf{คำตอบ:} เป็นค่าที่มีการเปลี่ยนแปลงด้วย Learning algorithm\\
 \textbf{คำอธิบาย:} Hyper-parameters ถูกกำหนดโดยผู้ใช้ก่อนเริ่มเทรน ส่วนค่าที่ปรับเปลี่ยนระหว่างเทรนคือ Model Parameters
 
 \subsection*{ข้อที่ 3}
 \textbf{โจทย์:} หากต้องการวัด Unbiased generalisation performance ต้องแยก Test set ออกจากส่วนใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ถูกทุกข้อ
+    \item Training
+    \item Model selection
+    \item Hyper-parameter tuning
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกข้อ (Training, Model selection, Hyper-parameter tuning)\\
 \textbf{คำอธิบาย:} ต้องเก็บ Test set แยกไว้ต่างหากเพื่อป้องกัน Data Leakage และใช้ประเมินผลเพียงครั้งเดียวในตอนท้าย
 
 \subsection*{ข้อที่ 4}
 \textbf{โจทย์:} ข้อใดคือคำจำกัดความของ Overfitting\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Training error < Test error
+    \item เมื่อเพิ่ม Model complexity แล้ว Training error ลดลง แต่ Test error เพิ่มขึ้น
+    \item Test error < Training error
+    \item Training error สูง
+\end{itemize}
+
 \textbf{คำตอบ:} เมื่อเพิ่ม Model complexity แล้ว Training error ลดลง แต่ Test error เพิ่มขึ้น\\
 \textbf{คำอธิบาย:} สภาวะที่โมเดลจดจำ Noise ใน Training data มากเกินไปจนไม่สามารถทำนายข้อมูลใหม่ได้ดี
 
 \subsection*{ข้อที่ 5}
 \textbf{โจทย์:} การแก้ปัญหา Overfitting ทำได้โดยวิธีใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ใส่ Regularisation term ลงไปใน Loss function
+    \item ลดจำนวน Degrees of polynomials ในกรณีของ Linear regression models
+    \item ถูกทุกข้อ
+    \item เพิ่ม Training samples
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกข้อ (Regularisation, ลด Degree of polynomial, เพิ่ม Training samples)\\
 \textbf{คำอธิบาย:} วิธีการเหล่านี้มุ่งเน้นการลดความซับซ้อนของโมเดลหรือเพิ่มข้อมูลเพื่อให้โมเดลเรียนรู้ Pattern จริง
 
 \subsection*{ข้อที่ 6}
 \textbf{โจทย์:} Error ประเภทใดไม่ขึ้นอยู่กับ Model complexity หรือโมเดลที่เลือกใช้\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ถูกทุกข้อ
+    \item Bias
+    \item Variance
+    \item Irreducible error
+\end{itemize}
+
 \textbf{คำตอบ:} Irreducible error\\
 \textbf{คำอธิบาย:} เป็น Noise ที่เกิดจากธรรมชาติของข้อมูล ไม่สามารถลดทอนได้ไม่ว่าจะใช้โมเดลเก่งเพียงใด
 
 \subsection*{ข้อที่ 7}
 \textbf{โจทย์:} ค่าของ Normalized root mean squared error (NRMSE) อยู่ในช่วงใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item {[-1,1]}
+    \item {[0,1]}
+    \item {[0,$\infty$)}
+    \item {(-$\infty$,$\infty$)}
+\end{itemize}
+
 \textbf{คำตอบ:} [0, $\infty$)\\
 \textbf{คำอธิบาย:} RMSE เป็นบวกเสมอ และการ Normalization ด้วยค่าบวกทำให้ผลลัพธ์เริ่มที่ 0 และไม่มีขีดจำกัดบน
 
 \subsection*{ข้อที่ 8}
 \textbf{โจทย์:} การจัดความพอใจเป็น positive หรือ negative เป็น Classification ประเภทใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Binary classification
+    \item Multi-class classification
+    \item Multi-label classification
+\end{itemize}
+
 \textbf{คำตอบ:} Binary classification\\
 \textbf{คำอธิบาย:} เป็นการจัดกลุ่มข้อมูลออกเป็น 2 คลาสที่เป็นคู่ตรงข้ามกัน
 
 \subsection*{ข้อที่ 9}
 \textbf{โจทย์:} ข้อใดคือชื่อของ Binary classifier\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Logistic regression
+    \item Linear regression
+    \item Ridge regression
+    \item Lasso regression
+\end{itemize}
+
 \textbf{คำตอบ:} Logistic regression\\
 \textbf{คำอธิบาย:} แม้ชื่อจะลงท้ายด้วย Regression แต่ทำงานโดยใช้ Sigmoid ฟังก์ชันเพื่อจัดกลุ่มข้อมูลเป็น 2 ประเภท
 
 \subsection*{ข้อที่ 10}
 \textbf{โจทย์:} ข้อใดคือ Loss function ที่เหมาะสมในการทำ Binary classification\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Mean Absolute Error (MAE)
+    \item Root Mean Squared Error (RMSE)
+    \item Cross entropy loss
+    \item ถูกทุกข้อ
+\end{itemize}
+
 \textbf{คำตอบ:} Cross entropy loss\\
 \textbf{คำอธิบาย:} ถูกออกแบบมาเพื่อวัดความแตกต่างระหว่างความน่าจะเป็น (0-1) และใช้หลักการ Maximum Likelihood
 
 \subsection*{ข้อที่ 11}
 \textbf{โจทย์:} ถ้าต้องการทำ Multi-class classification ที่สามารถได้ 4 คลาส จะต้องสร้าง Binary classifier อย่างน้อยที่สุดกี่อัน โดยที่คำนึงถึง Unknown class ด้วย\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item 6
+    \item 1
+    \item 4
+    \item 3
+\end{itemize}
+
 \textbf{คำตอบ:} 4\\
 \textbf{คำอธิบาย:} ใช้เทคนิค One-vs-Rest (OvR) โดยสร้าง 1 ตัวต่อ 1 คลาส หากทั้ง 4 ตัวตอบ No ทั้งหมด จะสรุปได้ว่าเป็น Unknown
 
 \subsection*{ข้อที่ 12}
 \textbf{โจทย์:} ตัวเลือกใดไม่ควรใช้เป็น Evaluation metrics สำหรับปัญหา Classification ได้\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Confusion matrix
+    \item Accuracy
+    \item Mean Squared
+    \item Precision-recall และ F1-secore
+\end{itemize}
+
 \textbf{คำตอบ:} Mean Squared Error (MSE)\\
 \textbf{คำอธิบาย:} MSE ออกแบบมาสำหรับงาน Regression ที่ต้องการวัดระยะห่างเชิงตัวเลข ไม่เหมาะกับงานจัดหมวดหมู่ที่ระยะห่างระหว่างคลาสไม่มีความหมายเชิงเปรียบเทียบ
 
 \subsection*{ข้อที่ 13}
 \textbf{โจทย์:} ข้อใดเรียงลำดับขั้นตอนในการ Machine learning project ไม่เหมาะสม\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Cross-validation -> Train model -> Evaluate model
+    \item Split train-test -> Train model -> Evaluate model
+    \item Over sampling -> Split train-test -> Train model -> Evaluate model
+    \item Split train-test -> Data transformation ด้วย fit\_tranform บน tranining set -> Train model -> Evaluate model
+\end{itemize}
+
 \textbf{คำตอบ:} Over sampling -> Split train-test -> Train model -> Evaluate model\\
 \textbf{คำอธิบาย:} การทำ Over sampling ต้องทำหลังจากการแบ่งข้อมูล (Split) แล้วเท่านั้น เพื่อป้องกัน Data Leakage
 
 \subsection*{ข้อที่ 14}
 \textbf{โจทย์:} Output activation function ควรใช้สำหรับ Binary classification\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ReLu
+    \item Sigmoid
+    \item ไม่ใช้ Activation function
+    \item Tanh
+\end{itemize}
+
 \textbf{คำตอบ:} Sigmoid\\
 \textbf{คำอธิบาย:} Sigmoid บีบอัดค่าให้อยู่ในช่วง (0, 1) ซึ่งสอดคล้องกับคุณสมบัติของความน่าจะเป็นในงาน Binary classification
 
 \subsection*{ข้อที่ 15}
 \textbf{โจทย์:} ตัวเลือกใดเป็นการทำ Regularization ใน SVM\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ใช้ Kernel ที่มีความซับซ้อนมากขึ้น
+    \item ลดค่า ε สำหรับ Regression
+    \item ลดค่า Slack variable
+    \item เพิ่มค่า Slack variable
+\end{itemize}
+
 \textbf{คำตอบ:} เพิ่มค่า Slack variable (หรือลดค่า C)\\
 \textbf{คำอธิบาย:} การยอมให้มี Slack variable มากขึ้น (ผ่านการลด C) ทำให้ Margin กว้างขึ้นและโมเดลยืดหยุ่นขึ้น ช่วยลด Overfitting
 
 \subsection*{ข้อที่ 16}
 \textbf{โจทย์:} ข้อใดกล่าวถูกต้องเกี่ยวกับ Ensemble Learning\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ถูกทุกตัวเลือก
+    \item Boosting ไม่สามารถสร้างโมเดลหลายๆโมเดลแบบ Parallel ได้ เนื่องจากต้องพยายามแก้ไข Error ที่เกิดจากโมเดลก่อนหน้า
+    \item Stacking มีการเทรนโมเดลอีกตัวหนึ่งเพื่อมารวบรวมคำตอบเพื่อเป็นคำตอบสุดท้าย
+    \item Bagging สามารถสร้างโมเดลหลายๆโมเดลแบบ Parallel ได้
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกตัวเลือก (Boosting เป็น Sequential, Stacking มี Meta-learner, Bagging เป็น Parallel)\\
 \textbf{คำอธิบาย:} เป็นลักษณะเฉพาะของการทำงานในเทคนิค Ensemble แต่ละประเภท
 
 \subsection*{ข้อที่ 17}
 \textbf{โจทย์:} ตัวเลือกใดไม่ใช่จุดประสงค์ของการทำ Feature engineering\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เพื่อทำให้ความสัมพันธ์ระหว่าง Features กับ Target มีความซับซ้อนลดลง
+    \item เพื่อให้แปลความหมายได้เหมาะสมขึ้น
+    \item เพื่อให้ข้อมูลมีความเหมาะสมในการเทรนโมเดลมากขึ้น
+    \item เพื่อแก้ปัญหา Overfitting
+\end{itemize}
+
 \textbf{คำตอบ:} เพื่อทำให้ความสัมพันธ์ระหว่าง Features กับ Target มีความซับซ้อนลดลง\\
 \textbf{คำอธิบาย:} ปกติ Feature Engineering มักใช้เพื่อดึงความสัมพันธ์ที่ซ่อนอยู่ (อาจซับซ้อนขึ้นแต่ชัดเจนขึ้นสำหรับโมเดล) ไม่ใช่การลดความซับซ้อนของความสัมพันธ์โดยตรง
 
 \subsection*{ข้อที่ 18}
 \textbf{โจทย์:} โมเดลในตัวเลือกใดไม่จำเป็นต้องทำ Feature scaling\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Linear regression
+    \item Neural network
+    \item Support vector machine
+    \item Tree-based models
+\end{itemize}
+
 \textbf{คำตอบ:} Tree-based models\\
 \textbf{คำอธิบาย:} การตัดสินใจของต้นไม้ใช้จุดตัด (Threshold) ทีละฟีเจอร์ ไม่ได้วัดระยะห่างระหว่างฟีเจอร์ จึงไม่ได้รับผลกระทบจากสเกล
 
 \subsection*{ข้อที่ 19}
 \textbf{โจทย์:} ข้อใดกล่าวถูกต้องเกี่ยวกับ SHAP\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item SHAP ใช้ได้กับปัญหา Regression เท่านั้น
+    \item SHAP เป็นวิธีที่ใช้ในการแปลความหมายของการทำนายว่า Features ใดมีความสำคัญเท่าไหร่
+    \item SHAP ใช้ได้กับ Tree-based models เท่านั้น
+    \item SHAP ใช้ได้กับปัญหา Classification เท่านั้น
+\end{itemize}
+
 \textbf{คำตอบ:} เป็นวิธีที่ใช้ในการแปลความหมายของการทำนายว่า Features ใดมีความสำคัญเท่าไหร่\\
 \textbf{คำอธิบาย:} SHAP ใช้ทฤษฎีเกมเพื่อจัดสรรส่วนแบ่งความสำคัญให้แต่ละ Feature ในการทำนายผลลัพธ์
 
@@ -417,108 +924,276 @@ print(list(map(lambda i: i[1]==2*i[0] ,coor)))
 
 \subsection*{ข้อที่ 1}
 \textbf{โจทย์:} Supervised และ Unsupervised ต่างกันอย่างไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item supervised learning มีตัวอย่าง target output แต่ unsupervised learning ไม่มี
+    \item supervised learning มีผู้สอนกำหนด objective function ให้ แต่ unsupervised learning ไม่มี
+    \item supervised learning เป็นการทำงานตามคำสั่ง แต่ unsupervised learning เป็นการทำงานแบบสุ่ม
+    \item ทั้งสองรูปแบบไม่ต่างกัน
+\end{itemize}
+
 \textbf{คำตอบ:} Supervised มีเฉลย (Label), Unsupervised ไม่มีเฉลย\\
 \textbf{คำอธิบาย:} Unsupervised เรียนรู้จากโครงสร้างข้อมูลดิบเพื่อค้นหา Pattern โดยปราศจากป้ายกำกับ
 
 \subsection*{ข้อที่ 2}
 \textbf{โจทย์:} หลักการประเมิน Cluster ที่ดีคืออะไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item สมาชิกใน cluster มีรูปแบบคล้ายๆ กัน
+    \item สมาชิกต่าง cluster มีรูปแบบต่างกัน
+    \item จำนวนสมาชิกใน cluster ไม่น้อยจนเกินเหตุ
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกตัวเลือก (สมาชิกในกลุ่มเหมือนกัน, ต่างกลุ่มกันต่างกันมาก, จำนวนสมาชิกไม่น้อยเกินไป)\\
 \textbf{คำอธิบาย:} Cluster ที่ดีควรมีความหนาแน่นภายในสูงและมีการแยกห่างระหว่างกลุ่มชัดเจนเพื่อให้เกิดนัยสำคัญ
 
 \subsection*{ข้อที่ 3}
 \textbf{โจทย์:} distance กับ similarity ต่างกันอย่างไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item distance ยาวได้ไม่จำกัด แต่ similarity มีค่าสูงสุดจำกัด
+    \item distance มีค่าต่ำสุด แต่ similarity ไม่มีค่าต่ำสุด
+    \item distance เป็นค่าต่อเนื่อง แต่ similarity เป็นค่าไม่ต่อเนื่อง
+    \item distance ใช้กับตัวเลข ส่วน similarity ใช้กับข้อมูลชนิดกลุ่ม
+\end{itemize}
+
 \textbf{คำตอบ:} distance ยาวได้ไม่จำกัด แต่ similarity มีค่าสูงสุดจำกัด\\
 \textbf{คำอธิบาย:} Distance วัดความห่าง (เริ่มที่ 0 ไปถึง $\infty$) ส่วน Similarity วัดความเหมือน (มักอยู่ในช่วง [0, 1] หรือ [-1, 1])
 
 \subsection*{ข้อที่ 4}
 \textbf{โจทย์:} เราจะประเมินผล clustering ได้อย่างไรบ้าง\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ใช้ labeled data เข้ามาช่วย แล้วประเมินแบบเดียวกับ supervised learning
+    \item วัดความคล้ายของสมาชิกภายใน cluster และความต่างของสมาชิกระหว่าง cluster
+    \item วัดความแปรปรวนภายใน cluster
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกตัวเลือก (ใช้ labeled data, วัดความต่างระหว่างกลุ่ม, วัดความแปรปรวนภายใน)\\
 \textbf{คำอธิบาย:} การประเมินทำได้ทั้งแบบ External (เทียบ Label) และ Internal (ดูโครงสร้างทางคณิตศาสตร์)
 
 \subsection*{ข้อที่ 5}
 \textbf{โจทย์:} ตัวเลือกใดไม่ถูกต้องเกี่ยวกับระยะทางและความคล้าย\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Euclidean distance เหมาะกับข้อมูลที่เป็นตัวเลข มีค่าต่อเนื่อง
+    \item Hamming distance เหมาะกับข้อมูลชนิดกลุ่ม
+    \item Manhattan distance เหมาะกับข้อมูลที่เป็นตัวเลข
+    \item Cosine similarity เหมาะกับข้อมูลที่แต่ละมิติมีการกระจายไม่เท่ากัน
+\end{itemize}
+
 \textbf{คำตอบ:} Cosine similarity เหมาะกับข้อมูลที่แต่ละมิติมีการกระจายไม่เท่ากัน (เป็นข้อที่กำกวมที่สุด)\\
 \textbf{คำอธิบาย:} Cosine Similarity เน้นวัดทิศทางเวกเตอร์ ไม่ใช่คุณสมบัติหลักในการแก้ปัญหาการกระจายข้อมูลที่ไม่เท่ากัน
 
 \subsection*{ข้อที่ 6}
 \textbf{โจทย์:} ตัวเลือกใดเป็นสาเหตุให้ต้องลดมิติของข้อมูล\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เพื่อให้แสดงผลได้ง่าย
+    \item เพื่อประหยัดพื้นที่ในการเก็บข้อมูล
+    \item เพื่อเลือกเฉพาะข้อมูลที่เป็นประโยชน์
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกตัวเลือก (แสดงผลได้ง่าย, ประหยัดพื้นที่, เลือกเฉพาะข้อมูลที่เป็นประโยชน์)\\
 \textbf{คำอธิบาย:} เพื่อทำให้ข้อมูลอยู่ในรูปแบบที่เรียบง่ายขึ้น (Simplified Representation) โดยยังรักษาใจความสำคัญ
 
 \subsection*{ข้อที่ 7}
 \textbf{โจทย์:} จากรูปตัวเลือกใดเหมาะสมในการลดมิติข้อมูล Moons dataset ให้เหลือ 1 มิติ\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เลือกเฉพาะข้อมูลในแกน x1
+    \item เลือกเฉพาะข้อมูลในแกน x2
+    \item ใช้ PCA เลือกแกนหลักแกนแรก
+    \item ใช้ t-SNE บีบข้อมูลให้เหลือแกนเดียว
+\end{itemize}
+
 \textbf{ลักษณะรูปภาพ:} ภาพแสดงชุดข้อมูล Moons dataset ซึ่งเป็นจุดข้อมูลที่เรียงตัวกันเป็นรูปพระจันทร์เสี้ยวสองวงที่ซ้อนเหลื่อมกันในระนาบ 2 มิติ\\
 \textbf{คำตอบ:} t-SNE\\
 \textbf{คำอธิบาย:} ข้อมูล Moons เป็น Non-linear การใช้ PCA จะทำให้ข้อมูลทับซ้อนกัน แต่ t-SNE สามารถรักษาโครงสร้างความใกล้เคียงได้ดีกว่า
 
 \subsection*{ข้อที่ 8}
 \textbf{โจทย์:} ผลลัพธ์ใดสอดคล้องกับพฤติกรรมของ K-means บนข้อมูล Moons dataset\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item คำตอบที่ถูกคือ A
+    \item คำตอบที่ถูกคือ B
+    \item คำตอบที่ถูกคือ C
+    \item คำตอบที่ถูกคือ D
+\end{itemize}
+
 \textbf{ลักษณะรูปภาพ:} ภาพแสดงผลลัพธ์การแบ่งกลุ่มข้อมูล Moons dataset ด้วยอัลกอริทึมที่แตกต่างกัน (A-D)\\
 \textbf{คำตอบ:} รูปที่ D\\
 \textbf{คำอธิบาย:} K-means พยายามแบ่งพื้นที่ด้วยเส้นตรง (Decision boundary) จึงได้ผลลัพธ์เป็นการตัดผ่านกลุ่มข้อมูลในแนวระนาบ
 
 \subsection*{ข้อที่ 9}
 \textbf{โจทย์:} เมื่อต้องการสร้าง cluster ของธุรกรรมออนไลน์ที่ประกอบด้วยยอดเงินและประเภทร้านค้า ควรเลือกตัวแทนอย่างไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Mean
+    \item Mode
+    \item Mean ของประเภทร้านค้า, Mode ของยอดเงิน ช่วงเวลา และ timezone
+    \item Mean ของยอดเงิน, ช่วงเวลา และ mode ของ ประเภทร้านค้า timezone
+\end{itemize}
+
 \textbf{คำตอบ:} Mean ของยอดเงิน, ช่วงเวลา และ mode ของ ประเภทร้านค้า, timezone\\
 \textbf{คำอธิบาย:} ข้อมูลเชิงปริมาณใช้ค่าเฉลี่ย (Mean) ส่วนข้อมูลเชิงกลุ่มใช้ฐานนิยม (Mode) เป็นตัวแทนที่เหมาะสม
 
 \subsection*{ข้อที่ 10}
 \textbf{โจทย์:} ควรเลือกจำนวน cluster (k) อย่างไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ทดลองทีละค่า k จากน้อยไปมาก
+    \item ตั้งให้จำนวน luster มากกว่าที่คาดว่าจะได้ระดับหนึ่ง
+    \item ใช้ elbow method
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกตัวเลือก (ทดลองทีละค่า, ตั้งมากกว่าที่คาดไว้เล็กน้อย, ใช้ elbow method)\\
 \textbf{คำอธิบาย:} เป็นกระบวนการที่ใช้ร่วมกันเพื่อหาความสมดุลระหว่างความแม่นยำและความหมายทางธุรกิจ
 
 \subsection*{ข้อที่ 11}
 \textbf{โจทย์:} ตัวเลือกใดเป็นวิธีการแบ่งกลุ่มข้อมูล (cluster) แบบมีลำดับ\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item แบ่งกลุ่มใหญ่ก่อน แล้วค่อยๆ แบ่งกลุ่มย่อยในกลุ่มใหญ่
+    \item สร้างกลุ่มย่อยก่อน แล้วค่อยๆ รวมกลุ่มย่อยเป็นกลุ่มใหญ่
+    \item กำหนดจำนวนกลุ่มทั้งหมดที่ต้องการ แล้วใช้ K-Means clustering
+    \item แบ่งกลุ่มใหญ่ก่อน แล้วค่อยๆ แบ่งกลุ่มย่อยในกลุ่มใหญ่ และ สร้างกลุ่มย่อยก่อน แล้วค่อยๆ รวมกลุ่มย่อยเป็นกลุ่มใหญ่
+\end{itemize}
+
 \textbf{คำตอบ:} แบ่งกลุ่มใหญ่ก่อนค่อยแบ่งย่อย และ สร้างกลุ่มย่อยก่อนค่อยรวมเป็นกลุ่มใหญ่\\
 \textbf{คำอธิบาย:} ครอบคลุมทั้งวิธี Divisive (Top-down) และ Agglomerative (Bottom-up)
 
 \subsection*{ข้อที่ 12}
 \textbf{โจทย์:} ตัวเลือกใดเป็นการกำหนดค่าเพื่อให้ได้ cluster ที่เป็นประโยชน์\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item กำหนดจำนวนสมาชิกขั้นต่ำใน cluster
+    \item กำหนดความแปรปรวนขั้นสูงใน cluster
+    \item กำหนดความลึกสูงสุดของ cluster
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} กำหนดจำนวนสมาชิกขั้นต่ำใน cluster\\
 \textbf{คำอธิบาย:} เพื่อป้องกันการสร้างกลุ่มที่เป็น Noise หรือกลุ่มที่มีสมาชิกน้อยเกินไปจนไม่มีนัยสำคัญทางสถิติ
 
 \subsection*{ข้อที่ 13}
 \textbf{โจทย์:} จุดเด่นของ density-based clustering คืออะไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item หาจุดกึ่งกลางของ cluster ได้ง่าย
+    \item รองรับรูปร่างของ cluster หลายรูปแบบ
+    \item แบ่งข้อมูลเป็นลำดับชั้นได้สะดวก
+    \item กำหนดจำนวน cluster ได้
+\end{itemize}
+
 \textbf{คำตอบ:} รองรับรูปร่างของ cluster หลายรูปแบบ\\
 \textbf{คำอธิบาย:} เนื่องจากทำงานตามความหนาแน่น ไม่ยึดติดกับจุดศูนย์กลาง จึงตรวจจับกลุ่มที่มีรูปร่างอิสระได้
 
 \subsection*{ข้อที่ 14}
 \textbf{โจทย์:} DBSCAN สร้าง cluster ได้อย่างไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ลดระยะระหว่าง sample กับจุดศูนย์กลาง cluster
+    \item พิจารณาจำนวน sample ใน cluster ณ ขณะหนึ่ง
+    \item ลดความแปรปรวนของ sample ใน cluster ณ ขณะหนึ่ง
+    \item รวม sample ในพื้นที่เล็ก ๆ ที่หนาแน่นพอไว้ด้วยกัน
+\end{itemize}
+
 \textbf{คำตอบ:} รวม sample ในพื้นที่เล็ก ๆ ที่หนาแน่นพอไว้ด้วยกัน\\
 \textbf{คำอธิบาย:} ใช้พารามิเตอร์ Eps และ MinPts ในการเชื่อมต่อจุดที่อยู่ในพื้นที่หนาแน่นสูงเข้าด้วยกัน
 
 \subsection*{ข้อที่ 15}
 \textbf{โจทย์:} ใน association rule เกณฑ์ใดกำหนดความน่าสนใจของ Frequent Itemset\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item จำนวนครั้งที่ itemset นั้นปรากฏในชุดข้อมูล
+    \item จำนวนชนิดของ item ใน itemset
+    \item มูลค่ารวมของ itemset
+    \item จำนวนชิ้นของ item ใน itemset
+\end{itemize}
+
 \textbf{คำตอบ:} Support (ความถี่ในการปรากฏ)\\
 \textbf{คำอธิบาย:} Support บอกว่ารูปแบบพฤติกรรมนั้นเกิดขึ้นบ่อยเพียงใดในภาพรวมของชุดข้อมูลทั้งหมด
 
 \subsection*{ข้อที่ 16}
 \textbf{โจทย์:} support กับ confidence ต่างกันอย่างไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ไม่แตกต่างกัน
+    \item support ใช้ในการเลือก itemset ส่วน confidence ใช้ในการเรียงลำดับ itemset
+    \item support ใช้กับ itemset 1 ชุด ส่วน confidence ใช้บอกความสัมพันธ์ของ itemset 2 ชุด
+    \item support เป็นความน่าจะเป็น มีค่า 0-1 ส่วน confidence เป็นคะแนนมีค่าบวกลบได้
+\end{itemize}
+
 \textbf{คำตอบ:} support ใช้กับ itemset 1 ชุด ส่วน confidence ใช้บอกความสัมพันธ์ของ itemset 2 ชุด\\
 \textbf{คำอธิบาย:} Support บอกความนิยมของสินค้าก้อนนั้น ส่วน Confidence บอกโอกาสที่สินค้า B จะถูกซื้อถ้าซื้อ A ไปแล้ว
 
 \subsection*{ข้อที่ 17}
 \textbf{โจทย์:} เมื่อทำ matrix factorization $A = BC$ ตัวเลือกใดถูกต้อง\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เมื่อ |T| < |V| จะทำให้ matrix  B ที่ได้ สามารถใช้ประมาณค่าแทน matrix A ได้ โดยใช้พื้นที่ลดลง
+    \item เราสามารถดูการกระกระจายของคำใน topic ได้โดยดูจากค่าใน matrix C
+    \item แต่ละแถว (row) ของ matrix A และ B เรียกว่า document vector
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกตัวเลือก\\
 \textbf{คำอธิบาย:} ช่วยลดพื้นที่จัดเก็บ, ดูการกระจายคำใน topic ได้จาก matrix C และแต่ละแถวคือ document vector
 
 \subsection*{ข้อที่ 18}
 \textbf{โจทย์:} เมื่อใช้ topic model จะหา topic vector ของเอกสารใหม่ที่ไม่ได้ใช้ train ได้อย่างไร\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item กรณีที่เป็น matrix factorization ให้นำ word-topic distribution vector มาคูณกับ document-word vector
+    \item กรณีที่เป็น LDA ให้ fit document ใหม่กับ model เดิม เพื่อหา topic distribution vector
+    \item กรณีที่เป็น matrix factorization ให้เลือก vector ของเอกสารเดิมที่คล้ายกับเอกสารใหม่ที่สุดมาใช้
+    \item ถูกทั้ง A และ B
+\end{itemize}
+
 \textbf{คำตอบ:} กรณีที่เป็น LDA ให้ fit document ใหม่กับ model เดิม เพื่อหา topic distribution vector\\
 \textbf{คำอธิบาย:} เป็นกระบวนการ Inference มาตรฐานของ LDA เพื่อหาพารามิเตอร์แฝงสำหรับข้อมูลใหม่
 
 \subsection*{ข้อที่ 19}
 \textbf{โจทย์:} ตัวเลือกใดเป็นตัวอย่างการใช้งาน semi-supervised learning\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เพิ่มจำนวนข้อมูลที่ใช้ในการ train model ขึ้นโดยไม่ต้องมี labeled data
+    \item เพิ่มความแม่นยำของ classification model โดยอาศัย unlabeled data
+    \item ปรับ model ให้เหมาะกับ data distribution ใหม่มากขึ้น
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} เพิ่มความแม่นยำของ classification model โดยอาศัย unlabeled data\\
 \textbf{คำอธิบาย:} ใช้ประโยชน์จากข้อมูลไม่มีฉลากปริมาณมากร่วมกับข้อมูลมีฉลากน้อยชิ้นเพื่อหาขอบเขตคลาสที่ดีขึ้น
 
 \subsection*{ข้อที่ 20}
 \textbf{โจทย์:} หากจัดกลุ่มแล้วพบว่าได้ 4 กลุ่มที่มีสมาชิกพอๆ กัน ข้อใดถูกต้อง\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ขนาดของ cluster เหมาะสม
+    \item ข้อมูลน่าจะมีการกระจายตัวที่ดี
+    \item จำนวน cluster ที่ได้เหมาะสม
+    \item ไม่สามารถสรุปได้
+\end{itemize}
+
 \textbf{คำตอบ:} ไม่สามารถสรุปได้\\
 \textbf{คำอธิบาย:} อาจเป็นผลลัพธ์จากอัลกอริทึมที่บีบให้เท่ากัน หรือเป็นเรื่องบังเอิญ ไม่ได้การันตีความเหมาะสม
 
 \subsection*{ข้อที่ 21}
 \textbf{โจทย์:} หากต้องเลือกระหว่างวิธี A B และ C ในการจัดกลุ่ม ควรใช้เกณฑ์ใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เปรียบเทียบ variance ใน cluster เมื่อใช้วิธี A, B, C เลือกวิธีที่ให้ variance ต่ำสุด
+    \item เปรียบเทียบ similarity ภายใน cluster เมื่อใช้ A, B และ C เลือกวิธีที่ให้ similarity สูงสุด
+    \item สร้าง labeled dataset แล้วเลือกวิธีที่ให้ผลเหมือน labeled dataset มากที่สุด
+    \item ถูกทุกตัวเลือก
+\end{itemize}
+
 \textbf{คำตอบ:} ถูกทุกตัวเลือก (เทียบ variance, เทียบ similarity, เทียบ labeled dataset)\\
 \textbf{คำอธิบาย:} เป็นเกณฑ์มาตรฐานในการประเมินประสิทธิภาพทั้งแบบเชิงโครงสร้างและแบบอ้างอิงความจริง
 
@@ -527,104 +1202,262 @@ print(list(map(lambda i: i[1]==2*i[0] ,coor)))
 
 \subsection*{ข้อที่ 1}
 \textbf{โจทย์:} ข้อใดไม่ใช่ข้อมูลอนุกรมเวลา (Time Series)\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ค่าไฟฟ้าของห้องทุกห้องในคอนโดตอนเดือนมกราคม 2020
+    \item ราคาหุ้นรายวันของบริษัทในกลุ่ม S\&P500 ในช่วงสัปดาห์สุดท้ายของปี 2020
+    \item ข้อมูลปริมาณน้ำฝนรายวันในปี 2020
+    \item อุณหภูมิเฉลี่ยรายปีของประเทศสหรัฐตั้งแต่ปี 1950 ถึง 2000
+\end{itemize}
+
 \textbf{คำตอบ:} ค่าไฟฟ้าของห้องทุกห้องในคอนโดตอนเดือนมกราคม 2020\\
 \textbf{คำอธิบาย:} เป็นข้อมูลตัดขวาง (Cross-sectional) ณ จุดเวลาเดียว ไม่ได้ดูการเปลี่ยนแปลงตามลำดับเวลาของหน่วยเดิม
 
 \subsection*{ข้อที่ 2}
 \textbf{โจทย์:} ข้อใดไม่ถูกต้องเกี่ยวกับข้อมูล time series\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ข้อมูล time series อาจมีข้อมูลที่ขาดหายไปได้ จะต้องมีการเติมข้อมูลที่ขาดหายไปก่อนประมวลผล
+    \item ข้อมูล time series ต้องเก็บบนช่วงเวลาที่ห่างเท่า ๆ กัน
+    \item ข้อมูล time series เป็นข้อมูลที่มีลักษณะเปลี่ยนไปตามเวลา
+    \item ทุกข้อถูกต้องเกี่ยวกับ time series
+\end{itemize}
+
 \textbf{คำตอบ:} ข้อมูล time series ต้องเก็บนนช่วงเวลาที่ห่างเท่า ๆ กัน\\
 \textbf{คำอธิบาย:} ไม่จำเป็นเสมอไป ข้อมูลบางประเภทเช่นราคาหุ้นรายธุรกรรมอาจบันทึกในช่วงเวลาที่ไม่สม่ำเสมอได้
 
 \subsection*{ข้อที่ 3}
 \textbf{โจทย์:} ข้อมูลจำนวนผู้ป่วยใหม่รายวันในประเทศต่างๆ ดังรูป เป็นข้อมูลประเภทใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เป็น time series แบบ univariate
+    \item ไม่ใช่ time series
+    \item เป็น time series แบบ multivariate
+\end{itemize}
+
 \textbf{ลักษณะรูปภาพ:} ภาพแสดงกราฟเส้นจำนวนผู้ป่วย COVID-19 หลายเส้นตามแต่ละประเทศในช่วงเวลาเดียวกัน\\
 \textbf{คำตอบ:} เป็น time series แบบ multivariate\\
 \textbf{คำอธิบาย:} เนื่องจากมีการพิจารณาหลายตัวแปร (หลายประเทศ) ที่เปลี่ยนแปลงไปตามลำดับเวลาเดียวกัน
 
 \subsection*{ข้อที่ 4}
 \textbf{โจทย์:} ลักษณะใดที่บ่งบอกว่าข้อมูลเป็น Additive time series\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Multiplicative
+    \item Pseudo-additive
+    \item Additive
+\end{itemize}
+
 \textbf{ลักษณะรูปภาพ:} ภาพแสดงกราฟความต้องการใช้ไฟฟ้า (Electricity Demand) ที่มีความผันผวนคงที่ตลอดช่วงเวลา\\
 \textbf{คำตอบ:} Additive\\
 \textbf{คำอธิบาย:} ใน Additive model ขนาดของความผันผวน (Seasonal variation) จะคงที่ ไม่แปรผันตามระดับแนวโน้มหลัก
 
 \subsection*{ข้อที่ 5}
 \textbf{โจทย์:} จากกราฟ A, B, C จงระบุส่วนประกอบจากการ Decompose\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item A – trend, B – seasonal, C – residual
+    \item ไม่มีข้อถูก
+    \item A – seasonal, B – residual, C – trend
+    \item A – residual, B- trend, C – seasonal
+\end{itemize}
+
 \textbf{ลักษณะรูปภาพ:} ภาพแสดงองค์ประกอบ 3 ส่วน ได้แก่ กราฟ A (คลื่นซ้ำๆ), กราฟ B (สุ่ม), กราฟ C (เส้นโค้งทิศทาง)\\
 \textbf{คำตอบ:} A – seasonal, B – residual, C – trend\\
 \textbf{คำอธิบาย:} Seasonal แสดงรูปแบบซ้ำๆ, Trend แสดงทิศทางระยะยาว และ Residual แสดงค่าที่เหลือที่เป็นสัญญาณรบกวน
 
 \subsection*{ข้อที่ 6}
 \textbf{โจทย์:} ข้อใดไม่ถูกต้องเกี่ยวกับ time series decomposition\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Seasonal ของ time series สามารถมีได้หลายระดับ
+    \item Trend ของ time series บ่งบอกถึงความสัมพันธ์ระหว่างเวลาปัจจุบันกับเวลาก่อนหน้า
+    \item ถ้าเลือกวิธี decompose ที่เหมาะสมกับ time series จะได้ residual ที่มีขนาดเล็ก
+    \item ข้อมูล time series จะประกอบด้วยสามส่วนเสมอ
+\end{itemize}
+
 \textbf{คำตอบ:} ข้อมูล time series จะประกอบด้วยสามส่วนเสมอ (และ Trend บ่งบอกความสัมพันธ์ปัจจุบันกับอดีต)\\
 \textbf{คำอธิบาย:} ในทางวิชาการอาจมีส่วนประกอบอื่นเช่น Cyclical และ Trend บอกแค่ทิศทาง ไม่ได้บอกความสัมพันธ์เชิงโครงสร้างย้อนหลัง
 
 \subsection*{ข้อที่ 7}
 \textbf{โจทย์:} ข้อใดกล่าวถูกต้องที่สุดเกี่ยวกับ stationary property ของ time series\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item time series ที่ stationary จะมีค่า variance ที่ต่ำกว่า non-stationary
+    \item time series ที่ stationary จะไม่มี seasonal แต่สามารถมี trend ได้
+    \item time series ที่ non-stationary จะสามารถนำมาวิเคราะห์ได้ง่ายกว่า stationary
+    \item ถ้าแบ่งข้อมูล stationary time series เป็นสองส่วน ค่า variance ของข้อมูลครึ่งแรกจะมีค่าเท่ากับของครึ่งหลัง
+\end{itemize}
+
 \textbf{คำตอบ:} ถ้าแบ่งข้อมูล stationary เป็นสองส่วน ค่า variance ของครึ่งแรกจะมีค่าเท่ากับของครึ่งหลัง\\
 \textbf{คำอธิบาย:} ตามนิยามของ Stationary ความแปรปรวน (Variance) ต้องคงที่ตลอดช่วงเวลา
 
 \subsection*{ข้อที่ 8}
 \textbf{โจทย์:} หลักฐานใดใช้สนับสนุนว่าข้อมูลเป็น stationary time series\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เฉพาะ D ก็เพียงพอ เพราะ ADF test ใช้วัดว่าข้อมูลนี้ stationary หรือไม่
+    \item ทุกข้อ เพราะแต่ละข้อทดสอบกันคนละด้าน
+    \item A, C, D, F เพราะล้วนเป็นข้อมูลสนับสนุนการเป็น stationary
+    \item เฉพาะ A ก็เพียงพอ เพราะเป็นคุณลักษณะสำคัญของ time series
+\end{itemize}
+
 \textbf{คำตอบ:} A, C, D, F (Running mean คงที่, ไม่มี seasonal, ADF p-value ต่ำ, Autocorrelation ลดลงเร็ว)\\
 \textbf{คำอธิบาย:} เป็นคุณสมบัติพื้นฐานและผลการทดสอบทางสถิติที่ยืนยันความคงที่ของข้อมูล
 
 \subsection*{ข้อที่ 10}
 \textbf{โจทย์:} ถ้าจะแปลงข้อมูลให้กลายเป็น stationary จะต้องทำกระบวนการใดบ้าง\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ไม่สามารถปรับข้อมูลนี้ให้เป็น stationary ได้
+    \item A,B
+    \item A
+    \item A,B,C
+\end{itemize}
+
 \textbf{คำตอบ:} A, B, C (ทำ Differencing ลด trend/seasonal และทำ log transformation)\\
 \textbf{คำอธิบาย:} เพื่อจัดการทั้งความแปรปรวนที่ไม่คงที่, อิทธิพลของฤดูกาล และแนวโน้มของข้อมูล
 
 \subsection*{ข้อที่ 11}
 \textbf{โจทย์:} ข้อใดไม่ใช่ประโยชน์ของการ smoothing\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item สามารถเอามาเปลี่ยนให้ข้อมูล nonstationary กลายเป็น stationary ได้
+    \item สามารถนำมาขับเน้นลักษณะสำคัญของ time series ให้เด่นชัดขึ้น
+    \item สามารถนำมาใช้ทำนายอนาคตได้
+    \item สามารถนำมาลด noise ในข้อมูลได้
+\end{itemize}
+
 \textbf{คำตอบ:} สามารถนำมาใช้ทำนายอนาคตได้\\
 \textbf{คำอธิบาย:} Smoothing เป็นการจัดการข้อมูลอดีตเพื่อให้มองเห็น Pattern ชัดขึ้น แต่ไม่มีคุณสมบัติในการพยากรณ์อนาคตในตัวมันเอง
 
 \subsection*{ข้อที่ 12}
 \textbf{โจทย์:} หากข้อมูลมี Seasonality แต่ไม่มี Trend ควรใช้ smoothing ประเภทใดดีที่สุด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Double exponential moving average
+    \item Single exponential moving average
+    \item Triple exponential moving average
+    \item Moving average
+\end{itemize}
+
 \textbf{คำตอบ:} Triple Exponential Smoothing (Holt-Winters)\\
 \textbf{คำอธิบาย:} แม้ระบุว่าไม่มี Trend แต่ในตระกูลนี้ มีเพียง Triple Smoothing เท่านั้นที่รองรับองค์ประกอบฤดูกาล (Seasonality)
 
 \subsection*{ข้อที่ 13}
 \textbf{โจทย์:} ข้อใดเป็นเหตุผลหลักที่จะใช้ moving average แทน exponential moving average\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item เมื่อ time series มีเติบโตที่ช้ากว่า exponential
+    \item เมื่อต้องการให้ข้อมูลที่ smooth แล้วมีค่าใกล้ข้อมูลตั้งต้นมากขึ้น
+    \item ควรใช้ exponential moving average เสมอ
+    \item เมื่อต้องการให้น้ำหนักของข้อมูลในการเฉลี่ยเท่า ๆ กัน
+\end{itemize}
+
 \textbf{คำตอบ:} เมื่อต้องการให้น้ำหนักของข้อมูลในการเฉลี่ยเท่า ๆ กัน\\
 \textbf{คำอธิบาย:} Simple Moving Average ให้น้ำหนักทุกจุดเท่ากัน ต่างจาก EMA ที่ให้น้ำหนักข้อมูลใหม่มากกว่า
 
 \subsection*{ข้อที่ 14}
 \textbf{โจทย์:} SARIMA, ARIMA, ARMA จะทำงานได้ดีบนข้อมูลลักษณะใด\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ข้อมูล Stationary
+    \item ข้อมูล Stationary และ ลักษณะของข้อมูลในอดีตบ่งบอกถึงลักษณะข้อมูลในอนาคต
+    \item ข้อมูลที่มี seasonality ชัดเจน
+    \item ลักษณะของข้อมูลในอดีตบ่งบอกถึงลักษณะข้อมูลในอนาคต
+\end{itemize}
+
 \textbf{คำตอบ:} ข้อมูล Stationary และ ลักษณะของข้อมูลในอดีตบ่งบอกถึงลักษณะข้อมูลในอนาคต\\
 \textbf{คำอธิบาย:} ต้องมีความคงที่ทางสถิติและมีความสัมพันธ์กันเอง (Autocorrelation) เพื่อให้โมเดลเรียนรู้ได้
 
 \subsection*{ข้อที่ 15}
 \textbf{โจทย์:} ข้อใดไม่ถูกต้องเกี่ยวกับทำนายบนข้อมูล time series\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item มีกระบวนการเลือกโมเดล และประเมินผลของโมเดลที่คล้ายกับ supervised learning
+    \item จะต้องแบ่งข้อมูล training และ testing ตามช่วงเวลา
+    \item โมเดล SARIMA จะได้ผลดีที่สุด เพราะสามารถรับมือข้อมูลได้ทุกประเภท
+    \item ถ้าข้อมูลที่ต้องการโมเดลมีการเปลี่ยนแปลงพิเศษในบางช่วงเวลาจะต้องมีการจัดการพิเศษกับข้อมูลตั้งต้น
+\end{itemize}
+
 \textbf{คำตอบ:} โมเดล SARIMA จะได้ผลดีที่สุด เพราะสามารถรับมือข้อมูลได้ทุกประเภท\\
 \textbf{คำอธิบาย:} ไม่มีโมเดลเดียวที่เก่งที่สุด SARIMA เป็นเชิงเส้น หากข้อมูลซับซ้อนมาก Machine Learning อาจทำได้ดีกว่า
 
 \subsection*{ข้อที่ 16}
 \textbf{โจทย์:} ข้อใดไม่ถูกต้องเกี่ยวกับโมเดล ARMA, ARIMA และ SARIMA\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Moving Average model คล้ายกับ linear regression ใน supervised learning ต่างตรงที่ Moving average จะใช้ความผิดพลาดของการทำนายก่อนหน้าเป็น feature
+    \item Autoregressive model ใช้ประโยชน์จากสัมพันธ์ระหว่างช่วงเวลาของ time series ที่ปรากฏใน autocorrelation
+    \item ส่วนของ I ในโมเดล ARIMA จะทำให้สามารถรับมือข้อมูลที่มี trend ได้
+    \item เวลาใช้โมเดลให้เลือกค่า p q ที่ทำให้ได้ค่า error น้อยที่สุดใน training data
+\end{itemize}
+
 \textbf{คำตอบ:} เวลาใช้โมเดลให้เลือกค่า p q ที่ทำให้ได้ค่า error น้อยที่สุดใน training data\\
 \textbf{คำอธิบาย:} การเลือกตาม training error อย่างเดียวจะนำไปสู่ Overfitting ควรใช้เกณฑ์เช่น AIC/BIC
 
 \subsection*{ข้อที่ 17}
 \textbf{โจทย์:} ข้อใดถูกต้องที่สุดเกี่ยวกับ confidence interval\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item Confidence interval ที่เปอร์เซ็นต์เดียวกันจะมีความกว้างเท่ากันเสมอ
+    \item ถ้า 90\% confidence interval คือช่วง 9-11 ค่าที่แท้จริงของข้อมูลจะอยู่ในช่วง 8-12
+    \item Confidence interval จะกว้างขึ้นตาม \% ค่า confidence
+    \item ถ้า  90\% confidence interval คือช่วง 9-11 มีโอกาส 90\% ที่ค่าที่แท้จริงจะอยู่ในช่วง 9-11
+\end{itemize}
+
 \textbf{คำตอบ:} Confidence interval จะกว้างขึ้นตาม % ค่า confidence\\
 \textbf{คำอธิบาย:} เพื่อความมั่นใจที่สูงขึ้น ต้องขยายช่วงให้กว้างขึ้นเพื่อดักจับค่าที่แท้จริงได้ครอบคลุมมากขึ้น
 
 \subsection*{ข้อที่ 18}
 \textbf{โจทย์:} ข้อใดไม่ถูกต้องเกี่ยวกับ Facebook Prophet\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item สามารถใช้ค้นหา outlier ได้
+    \item สามารถใช้งานได้ดีแม้ว่าข้อมูลที่ใช้สร้างโมเดลกับข้อมูลจริงจะมีความแตกต่างกัน
+    \item สามารถแบ่ง seasonal ได้หลายระดับ
+    \item สามารถทำทุกอย่างที่ SARIMA ทำได้
+\end{itemize}
+
 \textbf{คำตอบ:} สามารถทำทุกอย่างที่ SARIMA ทำได้\\
 \textbf{คำอธิบาย:} สองโมเดลมีปรัชญาต่างกัน Prophet เป็น Additive Curve Fitting ส่วน SARIMA เป็น Stochastic Process
 
 \subsection*{ข้อที่ 19}
 \textbf{โจทย์:} กรณีใดที่ควรใช้ supervised learningแทน time series modeling\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ควรใช้ time series modeling กับข้อมูลที่มีความสัมพันธ์ระหว่างเวลาเสมอ
+    \item มีข้อมูลน้อย เช่น มีรอบ seasonal เพียงหนึ่งรอบ
+    \item โมเดลปริมาณน้ำฝน PM2.5 และอุณหภูมิในแต่ละวันของกรุงเทพ
+    \item ต้องการศึกษา seasonal effect ในข้อมูล
+\end{itemize}
+
 \textbf{คำตอบ:} มีข้อมูลน้อย เช่น มีรอบ seasonalเพียงหนึ่งรอบ\\
 \textbf{คำอธิบาย:} โมเดล Time Series ต้องการข้อมูลหลายรอบเพื่อแยก Trend/Seasonal หากน้อยไปควรใช้ Feature Engineering ใน Supervised แทน
 
 \subsection*{ข้อที่ 20}
 \textbf{โจทย์:} ข้อใดไม่ถูกต้องเกี่ยวกับการโมเดล time series\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item ควรใช้โมเดลที่ซับซ้อนที่สุดเพื่อจะได้รับมือกับข้อมูลทุกรูปแบบ
+    \item การทำsmoothingก่อนเทรนโมเดลสามารถช่วยให้โมเดลรับมือกับ outlier ได้ดีขึ้น
+    \item ถ้า time series เป็น multiplicative time series สามารถทำ log transform เพื่อใช้กับ additive model ได้
+    \item ควรมีการ transform ข้อมูลเพื่อทำให้โมเดล stationary มากขึ้นก่อนนำมาเทรนกับโมเดล
+\end{itemize}
+
 \textbf{คำตอบ:} ควรใช้โมเดลที่ซับซ้อนที่สุดเพื่อจะได้รับมือกับข้อมูลทุกรูปแบบ\\
 \textbf{คำอธิบาย:} ขัดกับหลัก Occam's Razor โมเดลซับซ้อนเกินไปมัก Overfit และอธิบายได้ยาก
 
 \subsection*{ข้อที่ 21}
 \textbf{โจทย์:} ข้อใดไม่ถูกต้องเกี่ยวกับการประยุกต์ใช้ time series modeling\\
+\textbf{ตัวเลือก:}
+\begin{itemize}
+    \item สามารถนำมาทำโมเดลเพื่อแจ้งเตือนในช่วงเวลาที่ผิดปกติ
+    \item สามารถนำ Confidence interval ของการทำนายใช้บอกจุดสูงสุดและต่ำสุดของความเป็นไปได้ของข้อมูลได้
+    \item สามารถนำ time series มา decompose เพื่อแสดง trend ของข้อมูลในการประกอบการตัดสินใจได้
+    \item เป็นการประยุกต์ใช้ที่ถูกต้องทุกข้อ
+\end{itemize}
+
 \textbf{คำตอบ:} สามารถนำ Confidence interval ของการทำนายใช้บอกจุดสูงสุดและต่ำสุดของความเป็นไปได้ของข้อมูลได้\\
 \textbf{คำอธิบาย:} ต้องใช้ Prediction Interval (PI) ไม่ใช่ Confidence Interval (CI) เนื่องจาก PI ครอบคลุมความผันผวนของข้อมูลจริงด้วย
 
